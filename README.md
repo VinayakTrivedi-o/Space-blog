@@ -32,13 +32,14 @@ A modern, responsive blog dedicated to space exploration, featuring articles abo
 
 ## Project Structure 📁
 
-space-blog/ 
- ├── index.html
- ├── blog.html
- ├── chandrayaan.html
- ├── spacex.html
- ├── styles.css
- └── README.md
+space-blog/
+├── index.html       
+├── blog.html         
+├── chandrayaan.html  
+├── spacex.html       
+├── styles.css        
+└── README.md         
+
 
 ## Setup and Installation 🛠️
 
