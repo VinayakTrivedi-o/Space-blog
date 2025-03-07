@@ -4,24 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Blog - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
+    <button class="theme-toggle">
+        <span class="light">☀️</span>
+        <span class="dark">🌙</span>
+    </button>
+
     <header>
         <h1>Space Blog</h1>
     </header>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search articles...">
+        <div class="search-results"></div>
+    </div>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="blog.html">Blog</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
+
     <div class="container">
         <div class="hero">
             <h2>Exploring the Cosmos Through Words</h2>
             <p>Your gateway to the fascinating world of space exploration, technology, and discovery.</p>
         </div>
+
+        <!-- NASA Picture of the Day -->
+        <div class="nasa-apod"></div>
+
+        <!-- Mars Weather -->
+        <div class="mars-weather"></div>
         
+        <!-- Space News Section -->
+        <section class="space-news">
+            <h2>Latest Space News</h2>
+            <div class="news-ticker-container">
+                <div class="news-ticker">
+                    <!-- News items will be inserted here by JavaScript -->
+                </div>
+            </div>
+            <div class="news-container"></div>
+        </section>
+
+        <!-- Featured Blog Posts -->
         <div class="featured-posts">
             <h2>Featured Posts</h2>
             <div class="post-grid">
@@ -38,6 +69,31 @@
             </div>
         </div>
 
+        <!-- Space Timeline -->
+        <section class="space-timeline">
+            <h2>Major Space Milestones</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>1961</h3>
+                        <p>Yuri Gagarin becomes the first human in space</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>1969</h3>
+                        <p>Apollo 11: First humans land on the Moon</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>2023</h3>
+                        <p>Chandrayaan-3: India's successful Moon landing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="about" class="section">
             <h2>About Us</h2>
             <p>Welcome to Space Blog, your premier destination for space exploration news and insights. We are passionate about bringing you the latest developments in space technology, missions, and discoveries. Our blog focuses on making complex space concepts accessible to everyone, from space enthusiasts to casual readers.</p>
@@ -50,6 +106,16 @@
             </ul>
         </section>
 
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest space exploration updates!</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
         <section id="contact" class="section">
             <h2>Contact Us</h2>
             <div class="contact-info">
@@ -58,8 +124,12 @@
             </div>
         </section>
     </div>
+
     <footer>
         &copy; 2024 Space Blog
     </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
 </body>
 </html> 

@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Success of Chandrayaan-3 - Space Blog</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
+    <button class="theme-toggle">
+        <span class="light">☀️</span>
+        <span class="dark">🌙</span>
+    </button>
+
     <header>
         <h1>Space Blog</h1>
     </header>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search articles...">
+        <div class="search-results"></div>
+    </div>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="blog.html">Blog</a>
         <a href="index.html#about">About</a>
         <a href="index.html#contact">Contact</a>
     </nav>
+
     <div class="container">
-        <div class="post">
+        <article class="post">
             <h2>The Success of Chandrayaan-3</h2>
             <p>With the recent success of the Chandrayaan-3 mission, as India rejoices in the glory of finally having achieved what many countries including them have been trying to for years – landing on the South Pole of the moon – a lot of questions come to light.</p>
             <p>In this blog post, we will attempt to unearth (pun intended) how the Indian space agency manages to accomplish what most others have trouble doing, despite not having the resources or the funding that first-world nations do.</p>
@@ -29,10 +42,9 @@
             <p>ISRO built India's first satellite, Aryabhata, which was launched in 1975. It has the world's largest constellation of remote-sensing satellites and operates the GAGAN and IRNSS satellite navigation systems. It has sent 3 missions to the Moon and one to Mars.</p>
 
             <h2>Other countries' programs</h2>
-            <p>The USA's space program, led by NASA, has a history of achievements such as the Apollo Moon landings and the Space Shuttle program. There have also been robotic exploration missions while maintaining Earth observation and satellite communication capabilities. Recent developments include public-private partnerships for crewed spaceflight, and future missions include returning humans to the Moon.
-                China's space programs include satellite launches, crewed missions, and robotic exploration of the Moon and Mars. It operates its own navigation satellite system and it has also constructed a successful space station.
-                Russia has had notable achievements dating back to the launch of Sputnik I in 1957, the world's first artificial satellite. Since then Russia has achieved major milestones in space exploration, including the first human spaceflight and the first spacewalk. Recently, it launched the Luna-25 mission, which unfortunately failed after an unsuccessful orbital manoeuvre.
-            </p>
+            <p>The USA's space program, led by NASA, has a history of achievements such as the Apollo Moon landings and the Space Shuttle program. There have also been robotic exploration missions while maintaining Earth observation and satellite communication capabilities. Recent developments include public-private partnerships for crewed spaceflight, and future missions include returning humans to the Moon.</p>
+            <p>China's space programs include satellite launches, crewed missions, and robotic exploration of the Moon and Mars. It operates its own navigation satellite system and it has also constructed a successful space station.</p>
+            <p>Russia has had notable achievements dating back to the launch of Sputnik I in 1957, the world's first artificial satellite. Since then Russia has achieved major milestones in space exploration, including the first human spaceflight and the first spacewalk. Recently, it launched the Luna-25 mission, which unfortunately failed after an unsuccessful orbital manoeuvre.</p>
 
             <h2>Budget</h2>
             <p>ISRO has constrained space budgets, with its space spending as a percentage of GDP remaining relatively low. In comparison, the US allocates 0.28 per cent of its GDP to space, positioning India at seventh globally with 0.04 per cent. However, ISRO's ability to design cost-effective solutions, such as the SSLV rocket, has given India a competitive edge in the global launch industry.</p>
@@ -41,16 +53,30 @@
             <p>ISRO is known world over for its cost effectiveness. One of the most important reasons for its cost effectiveness are the realistic but ambitious expectations that the scientists set. The capabilities are built step by step. An example of this process can be seen from the very onset of the organisation, wherein the focus was developing practical weather satellites rather than costly mars and moon missions.</p>
 
             <h2>Future Collaboration</h2>
-            <p><strong>NISAR:</strong>This flagship partnership would have major contributions from NASA and ISRO. NASA is responsible for providing the L-Band SAR payload system. ISRO will supply the S-Band SAR payload and both these SAR systems will make use of a large size (about 12m diameter) common unfurl able reflector antenna. In addition, NASA would provide engineering payloads for the mission, including a Payload Data Subsystem, High-rate Science Downlink System, GPS receivers and a Solid State Recorder.</p>
+            <p><strong>NISAR:</strong> This flagship partnership would have major contributions from NASA and ISRO. NASA is responsible for providing the L-Band SAR payload system. ISRO will supply the S-Band SAR payload and both these SAR systems will make use of a large size (about 12m diameter) common unfurl able reflector antenna. In addition, NASA would provide engineering payloads for the mission, including a Payload Data Subsystem, High-rate Science Downlink System, GPS receivers and a Solid State Recorder.</p>
             
             <p><strong>LUPEX:</strong> The Lunar Polar Exploration Mission (LUPEX) is a planned joint lunar mission by the Indian Space Research Organisation (ISRO) and Japan Aerospace Exploration Agency (JAXA). The mission would send an uncrewed lunar lander and rover to explore the south pole region of the Moon no earlier than 2026. It is envisaged to explore the permanently shadowed regions on the Moon. JAXA is likely to provide the H3 launch vehicle and the rover, while ISRO would be providing the lander.</p>
 
             <h2>Conclusion</h2>
             <p>All in all, by simplifying the system, miniaturizing, strict quality control and maximizing the output from a product makes ISRO's space missions the most frugal and cost effective ones in the world. The Mars Orbiter Mission and Chandrayaan 3 are shining examples of ISROs successes.</p>
-        </div>
+        </article>
+
+        <!-- Comments Section -->
+        <section class="comments">
+            <h2>Comments</h2>
+            <form class="comment-form">
+                <textarea placeholder="Share your thoughts..." required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+            <div class="comments-list"></div>
+        </section>
     </div>
+
     <footer>
         &copy; 2024 Space Blog
     </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
 </body>
 </html> 

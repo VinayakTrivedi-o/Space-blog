@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceX and the Future to Mars - Space Blog</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
+    <button class="theme-toggle">
+        <span class="light">☀️</span>
+        <span class="dark">🌙</span>
+    </button>
+
     <header>
         <h1>Space Blog</h1>
     </header>
+
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search articles...">
+        <div class="search-results"></div>
+    </div>
+
     <nav>
         <a href="index.html">Home</a>
         <a href="blog.html">Blog</a>
         <a href="index.html#about">About</a>
         <a href="index.html#contact">Contact</a>
     </nav>
+
     <div class="container">
-        <div class="post">
+        <article class="post">
             <h2>SpaceX and the Future to Mars</h2>
             <p>As humanity looks to the stars for its next great adventure, SpaceX stands at the forefront of making interplanetary travel a reality. Under the leadership of Elon Musk, the company has revolutionized space exploration with its innovative approach to rocket technology and ambitious plans for Mars colonization.</p>
 
@@ -40,12 +53,12 @@
 
             <h2>Technical Challenges</h2>
             <p>The journey to Mars presents numerous technical challenges that SpaceX is actively working to overcome. These include:</p>
-            <p>
-                - Radiation protection for long-duration space flight<br>
-                - Life support systems for extended missions<br>
-                - In-situ resource utilization on Mars<br>
-                - Landing large payloads on the Martian surface
-            </p>
+            <ul>
+                <li>Radiation protection for long-duration space flight</li>
+                <li>Life support systems for extended missions</li>
+                <li>In-situ resource utilization on Mars</li>
+                <li>Landing large payloads on the Martian surface</li>
+            </ul>
 
             <h2>Recent Achievements</h2>
             <p>SpaceX has already achieved several significant milestones in its journey to Mars:</p>
@@ -61,10 +74,24 @@
 
             <h2>Conclusion</h2>
             <p>SpaceX's journey to Mars represents one of humanity's most ambitious endeavors. Through technological innovation, persistent determination, and a clear vision for the future, the company is laying the groundwork for humanity's next great leap. As we stand on the brink of becoming a multi-planetary species, SpaceX's work reminds us that what once seemed impossible may be within our reach.</p>
-        </div>
+        </article>
+
+        <!-- Comments Section -->
+        <section class="comments">
+            <h2>Comments</h2>
+            <form class="comment-form">
+                <textarea placeholder="Share your thoughts..." required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+            <div class="comments-list"></div>
+        </section>
     </div>
+
     <footer>
         &copy; 2024 Space Blog
     </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
 </body>
 </html> 
