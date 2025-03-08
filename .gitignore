@@ -1,13 +1,14 @@
 # Environment variables
 .env
 
-# Dependencies
-node_modules/
-
-# IDE files
+# Editor directories and files
 .vscode/
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
-# OS files
+# System Files
 .DS_Store
 Thumbs.db 
