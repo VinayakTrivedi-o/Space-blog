@@ -1,11 +1,8 @@
+import CONFIG from './config.js';
+
 class SpaceAPI {
     constructor() {
-        this.config = {
-            NASA_API_KEY: CONFIG.NASA_API_KEY,
-            SPACEFLIGHT_NEWS_API: 'https://api.spaceflightnewsapi.net/v4/articles',
-            MARS_WEATHER_API: CONFIG.MARS_WEATHER_API,
-            NASA_APOD_API: CONFIG.NASA_APOD_API
-        };
+        this.config = CONFIG;
     }
 
     // Fetch Space News

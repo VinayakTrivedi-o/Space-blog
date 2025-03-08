@@ -1,14 +1,8 @@
-// Configuration
-const CONFIG = {
-    NASA_API_KEY: '9JFdSfhR9VZx06Km8fdGfTFWTiIvBe9AOIoV1lCh',
-    SPACEFLIGHT_NEWS_API: 'https://api.spaceflightnewsapi.net/v3/articles',
-    MARS_WEATHER_API: 'https://api.nasa.gov/insight_weather/',
-    NASA_APOD_API: 'https://api.nasa.gov/planetary/apod'
-};
+import CONFIG from './config.js';
 
 // Check for NASA API key
 if (!CONFIG.NASA_API_KEY) {
-    console.warn('NASA API key is not set. Please add your API key in js/main.js');
+    console.warn('NASA API key is not set. Please add your API key in the meta tag.');
     document.body.insertAdjacentHTML('beforeend', `
         <div style="position: fixed; bottom: 20px; right: 20px; background: #ff4444; color: white; padding: 15px; border-radius: 5px; z-index: 1000;">
             ⚠️ NASA API key not configured. Some features may not work.
